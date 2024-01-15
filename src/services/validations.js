@@ -8,6 +8,12 @@ const isValid = (gamerTag) => {
             return true;
         }
     }
+
+    for (let i = 0; i < 10; i++) {
+        if (gamerTag.length >= 8 && (gamerTag[i])) {
+            return true;
+        }
+    }
     return false;
 };
 
