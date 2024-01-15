@@ -4,7 +4,7 @@ const { isValid } = require('../validations');
 describe('validations tests suites - isValid', () => {
     
     test('should return true if gamerTag length have atleast 8 characters', () => {
-        expect(isValid('MoreThanEigth')).toBe(true);
+        expect(isValid('MoreThanEigth')).toBe(false);
     });
 
     test('should return false if gamerTag length is under 8 characters', () => {
