@@ -39,6 +39,7 @@ try {
     checkButton.addEventListener('click', () => {
         const validationResult = isValid(gamerTagValue);
         // TODO : Define the correct error message regarding the validation rules
+        // instead of adding true or false to the feedback message i should instead return a error message
         feedbackMessage.textContent = validationResult
             ? 'Gamer tag is not valid'
             : 'Gamer tag is valid';
